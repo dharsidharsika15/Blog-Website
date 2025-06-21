@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .main1{
+            background-color: black;
+            color: azure;
+            font-size: x-large;
+            text-align: center;
+        }
+        h1{
+            margin: 0px;
+        }
+        .acre{
+            position: relative;
+            width: 1000px;
+            height: 600px;
+            background-color: rgb(44, 207, 207);
+            top: 100px;
+        }
+        .house1{
+            position: absolute;
+            top: 0px;
+            left: 500px;
+            top: 200px;
+            font-size: xx-large;
+            color: azure; 
+        }
+        .house1 img{
+            width: 100%;
+            height: 100%;
+        }
+        .house2{
+            position: absolute;
+            left: 1700px;
+            top: 0px;
+        }
+        .house2 img{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!--Static Position-->
+    <div class="main1">
+       <h1>Dhoni</h1>
+       <table>
+        <tr>
+            <td><b>Home</b></td>
+            <td><b>About</b></td>
+            <td><b>Contact</b></td>
+            <td><b>Media</b></td>
+        </tr>
+       </table>
+    </div>
+    <!--Relative Container-->
+    <div class="acre">
+        <img src="https://images.icc-cricket.com/image/upload/t_ratio21_9-size60/prd/bo1umdnxdaufzjg5un34" alt="">
+        <!--Relative Position-->
+        <div class="house1">
+             <h1>Thala DHONI</h1>
+             <!-- <p>I went for AMC</p>
+             <img src="https://tngasa.com/wp-content/uploads/2022/06/the-american-college-madurai-1.jpg" alt=""> -->
+        </div>
+        <div class="house2">
+            <img src="https://ih1.redbubble.net/image.4991347817.8059/flat,750x,075,f-pad,750x1000,f8f8f8.webp" alt="">
+        </div>
+    </div>
+</body>
+</html>
